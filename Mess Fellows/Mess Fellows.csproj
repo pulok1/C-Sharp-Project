@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB82CF3E-E78D-4C23-A238-9544634CD360}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mess_Fellows</RootNamespace>
+    <AssemblyName>Mess Fellows</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMembersMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMembersMoney.designer.cs">
+      <DependentUpon>AddMembersMoney.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bkash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bkash.designer.cs">
+      <DependentUpon>Bkash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changeusername.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changeusername.Designer.cs">
+      <DependentUpon>Changeusername.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateMess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMess.designer.cs">
+      <DependentUpon>CreateMess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deposite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposite.designer.cs">
+      <DependentUpon>Deposite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface.Designer.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meal.designer.cs">
+      <DependentUpon>Meal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAdmin.Designer.cs">
+      <DependentUpon>NewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nogod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nogod.designer.cs">
+      <DependentUpon>Nogod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveUser.Designer.cs">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentToPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentToPay.Designer.cs">
+      <DependentUpon>RentToPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rocket.designer.cs">
+      <DependentUpon>Rocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMealEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMealEstimate.Designer.cs">
+      <DependentUpon>ShowMealEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalMeal.Designer.cs">
+      <DependentUpon>TotalMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UNameChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UNameChange.designer.cs">
+      <DependentUpon>UNameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPassChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPassChange.designer.cs">
+      <DependentUpon>UPassChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCreate.Designer.cs">
+      <DependentUpon>UserCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCresteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCresteConfirm.Designer.cs">
+      <DependentUpon>UserCresteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface.Designer.cs">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersTotalBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersTotalBill.Designer.cs">
+      <DependentUpon>UsersTotalBill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMembersMoney.resx">
+      <DependentUpon>AddMembersMoney.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bkash.resx">
+      <DependentUpon>Bkash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changeusername.resx">
+      <DependentUpon>Changeusername.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMess.resx">
+      <DependentUpon>CreateMess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposite.resx">
+      <DependentUpon>Deposite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface.resx">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meal.resx">
+      <DependentUpon>Meal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAdmin.resx">
+      <DependentUpon>NewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nogod.resx">
+      <DependentUpon>Nogod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveUser.resx">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentToPay.resx">
+      <DependentUpon>RentToPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rocket.resx">
+      <DependentUpon>Rocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMealEstimate.resx">
+      <DependentUpon>ShowMealEstimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalMeal.resx">
+      <DependentUpon>TotalMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UNameChange.resx">
+      <DependentUpon>UNameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPassChange.resx">
+      <DependentUpon>UPassChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCreate.resx">
+      <DependentUpon>UserCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCresteConfirm.resx">
+      <DependentUpon>UserCresteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface.resx">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersTotalBill.resx">
+      <DependentUpon>UsersTotalBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12413c737b %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-08-17 011934.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-male-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvczYzLWppci03MDA1LWNoaW0tbC5qcGc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvam9iMzctczYzLXBvci0wMTI2LWwuanBn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OI4JSS0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1683082228nagad-transparent-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkash-logo-835789094A-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-saving-clip-art-bank-money-5c6497651283d5.6721720815500962290759.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3830053.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nohat-kpng-1568573362.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b80598541a.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6949026_preview.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b80598541a1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80fe843afe.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1e6000fe4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d392d1673d.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-saving-clip-art-bank-money-5c6497651283d5.67217208155009622907591.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3829218.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-money-clip-art-computer-icons-finance-payment-5c6a56ae730c21.7969731215504728784712.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lunch-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GetUserImage.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360162214_111430262024150_6365328899681389978_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
